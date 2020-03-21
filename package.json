@@ -1,0 +1,23 @@
+{
+	"name": "Walrus",
+	"version": "1.0.0",
+	"description": "",
+	"main": "crawler.js",
+	"directories": {
+		"test": "test"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.3",
+		"faunadb": "^2.13.0",
+		"lodash": "^4.17.15",
+		"node-fetch": "^2.6.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"start": "clear; cd local; node server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
