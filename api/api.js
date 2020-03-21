@@ -4,11 +4,6 @@ const dotenv = require('dotenv');
 const express = require('express');
 const path = require('path');
 
-const config = dotenv.config();
-if (config.error) {
-	throw config.error;
-}
-
 // Routes
 const routes = {
 	identity  : '/',
