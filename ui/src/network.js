@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const HOSTPORT = '159.89.141.106:3001';
+
 // Private
 const _error = (err) => {
 	if (err.response) {
@@ -49,22 +51,18 @@ const _post = (url, payload) => {
 // Public
 export const backward = async (exid, ref) => {
 	if (exid && ref) {
-		return await _get(
-			`http://localhost:3001/page?exid=${exid}&before=${ref}`
-		);
+		return await _get(`http://${HOSTPORT}/page?exid=${exid}&before=${ref}`);
 	}
 };
 
 export const forward = async (exid, ref) => {
 	if (exid && ref) {
-		return await _get(
-			`http://localhost:3001/page?exid=${exid}&after=${ref}`
-		);
+		return await _get(`http://${HOSTPORT}/page?exid=${exid}&after=${ref}`);
 	}
 };
 
 export const startCrawl = async (url, limit) => {
-	return await _post('http://localhost:3001/exec', {
+	return await _post(`http://${HOSTPORT}/exec`, {
 		url   : url,
 		limit : limit,
 	});
