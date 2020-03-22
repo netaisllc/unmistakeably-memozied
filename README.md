@@ -73,6 +73,10 @@ required to run the UI locally.)
 
 Logging on the part of the API and the Crawler is **verbose** but 100% in the cloud.  If there is interest in seeing the results, please let me know.
 
+We can assume that AWS will not be down, but the API server is another matter. (I went cheap.) The following link can be used to check it's status:
+
+* https://stats.uptimerobot.com/7D77oimmE5
+
 
 ## issues, observations, things to improve
 
